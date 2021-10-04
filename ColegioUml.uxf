@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>120</y>
+      <w>320</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Alumno
+--
+-legajo:int
+-nombre:String
+-apellido:String
+--
++Alumno(legajo:int,nombre:String,apellido:String)
++getLegajo():int
++getNombre():String
++getApellido():String
+
++setLegajo(legajo:int):void
++setNombre(nombre:String):void
++setApellido(apellido:String):void
+
++agregarMateria(m:Materia):boolean
++cantidadDeMateria():int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>220</y>
+      <w>310</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Materia
+--
+-idMateria:int
+-nombre:String
+-anio:int
+--
++Materia(idMateria:int,nombre:String,anio:int)
++getIdMateria():int
++getNombre():String
++getAnio():int
+
++setIdMateria(idMateria:int):void
++setNombre(nombre:String):void
++setAnio(anio:int):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>200</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= materias 0..n</panel_attributes>
+    <additional_attributes>130.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>10</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Colegio
+--
+
+--
++static main(String[arg]):void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>30</y>
+      <w>190</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>40</y>
+      <w>110</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>90.0;180.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
